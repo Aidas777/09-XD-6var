@@ -7,7 +7,9 @@
     <title>Adobe XD 6 variantas</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins"> 
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700">  -->
 
     <style>
 
@@ -23,13 +25,13 @@
         body {
             max-width: 1920px;
             margin: 0 auto;
-            background-color: #0000004F;
-         }
+            background-color: rgba(0, 0, 0, 0.31);
+        }
 
         .container {
             width: 83.33%;
             height: 300px;
-            /* background-color: #0000004F; */
+            /* background-color: hsla(0, 0%, 0%, 0.31); */
             margin-left: auto;
             margin-right: auto;
             
@@ -39,10 +41,10 @@
         .navbar {
             width: 100%;
             height: 151px;
-            position: relative;
-            /* border-bottom: solid 1px #FFFFFF; */
-            border-bottom: solid 1px red;
-            /* background-color: springgreen; */
+            /* position: relative; */
+            border-bottom: solid 1px rgb(255, 255, 255);
+            /* border-bottom: solid 1px red; */
+            /* background-color: slateblue; */
             display: flex;
             float: left;
             flex-direction: row;
@@ -50,8 +52,8 @@
         }
 
         .navbar-links-box {
-            font-size: 1rem;
-            /* font-size: 0.9vw; */
+            /* font-size: 17px; */
+            font-size: 1vw;
             font-weight: 700;
             font-style: normal;
             font-variant: normal;
@@ -59,14 +61,15 @@
             float: left;
             padding-top: 64px;
             padding-bottom: 64px;
+            margin-left: 17.12%;
             /* border-bottom: solid 1px slateblue; */
             /* width: 769px; */
             width: 48.06%;
+            min-width: 400px;
             /* min-width: 400px; */
             justify-content: space-between;
-            left: 22.60%;
-            right: 37.34%;
-            position: absolute;
+            /* left: 22.60%; */
+            /* position: absolute; */
 
         }
 
@@ -77,23 +80,66 @@
             color: #FFFFFF;
             text-decoration: none;
             border-bottom: solid 3px transparent ;
-            padding-bottom: 7px;
+            margin-bottom: -7px;
             float: left;
+            display: flex;
 
         }
 
-        .ru {
-            /* float: left; */
-            position: absolute;
+        .ru, .en {
+            /* position: absolute; */
             padding-top: 64px;
             padding-bottom: 64px;
-            right: 50px;
+            font-size: 1vw;
+            line-height: 24px;
+            display: flex;
+            float: left;
+            font-weight: 700;
+            
+        }
+
+        .ru {
+            color: rgba(255, 255, 255, 0.502);
+        }
+
+        .en {
+            color: rgb(255, 255, 255);
+            margin-right: 50px;
+        }
+
+        .icon-find {
+            display: block;
+            width: 4.06%;
+            height: 65px;
+            min-width: 40px;
             /* float: left; */
+            margin-top: 43px;
+            margin-bottom: 43px;
+            margin-right: 0;
+            margin-left: auto;
+            color: white;
+            font-size: 1vw;
+            position: relative;
+           
+            background-color: rgb(68, 108, 205);
+
+            justify-items: center;
+        }
+
+        .fa-search {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            /* margin-left: auto;
+            margin-right: auto; */
+            /* display: flex; */
+
         }
 
         .navbar-link:hover {
             border-bottom: solid 3px #FFFFFF;
-            padding-bottom: 7px;
+            padding-bottom: -7px;
         }
 
 
@@ -114,7 +160,17 @@
                 <a href='#' class='navbar-link'>CONTACTS</a>
             </div>
 
-            <span class='ru'>RU</span>
+            <div class='ru'>
+                <span>RU</span>
+            </div>
+
+
+
+            <span class='en'>EN</span>
+
+            <div class='icon-find'>
+                <i class='fa fa-search'></i>
+            </div>
 
         </div>
 
