@@ -5,8 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adobe XD 6 variantas</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins"> 
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700">  -->
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 17px;
+            font-family: Poppins;
+        }
+
+        body {
+            max-width: 1920px;
+            margin: 0 auto;
+            background-color: #0000004F;
+         }
+
+        .container {
+            width: 83.33%;
+            height: 300px;
+            /* background-color: #0000004F; */
+            margin-left: auto;
+            margin-right: auto;
+            
+            /* width: 83.33%; */
+        }
+
+        .navbar {
+            width: 100%;
+            height: 151px;
+            position: relative;
+            /* border-bottom: solid 1px #FFFFFF; */
+            border-bottom: solid 1px red;
+            /* background-color: springgreen; */
+            display: flex;
+            float: left;
+            flex-direction: row;
+  
+        }
+
+        .navbar-links-box {
+            font-size: 1rem;
+            /* font-size: 0.9vw; */
+            font-weight: 700;
+            font-style: normal;
+            font-variant: normal;
+            display: flex;
+            float: left;
+            padding-top: 64px;
+            padding-bottom: 64px;
+            /* border-bottom: solid 1px slateblue; */
+            /* width: 769px; */
+            width: 48.06%;
+            /* min-width: 400px; */
+            justify-content: space-between;
+            left: 22.60%;
+            right: 37.34%;
+            position: absolute;
+
+        }
+
+        .navbar-link {
+            /* margin-left: 50px;
+            margin-right: 50px; */
+            line-height: 24px;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-bottom: solid 3px transparent ;
+            padding-bottom: 7px;
+            float: left;
+
+        }
+
+        .ru {
+            /* float: left; */
+            position: absolute;
+            padding-top: 64px;
+            padding-bottom: 64px;
+            right: 50px;
+            /* float: left; */
+        }
+
+        .navbar-link:hover {
+            border-bottom: solid 3px #FFFFFF;
+            padding-bottom: 7px;
+        }
+
+
+    </style>
 </head>
+
+
 <body>
     
+    <div class='container'>
+        <div class='navbar'>
+            <div class='navbar-links-box'>
+                <a href='#' class='navbar-link'>SERVICES</a>
+                <a href='#' class='navbar-link'>ABOUT US</a>
+                <a href='#' class='navbar-link'>OUR TEAM</a>
+                <a href='#' class='navbar-link'>TESTIMONIALS</a>
+                <a href='#' class='navbar-link'>NEWS</a>
+                <a href='#' class='navbar-link'>CONTACTS</a>
+            </div>
+
+            <span class='ru'>RU</span>
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        window.addEventListener('resize', function() {
+        let w=Math.max(document.documentElement.clientWidth);
+        console.log('Ekrano plotis: ' + w);
+    })
+
+    </script>
+
 </body>
 </html>
