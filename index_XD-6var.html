@@ -27,7 +27,10 @@
         body {
             max-width: 1920px;
             margin: 0 auto;
+            height: 3000px;
         }
+
+/* CONTAINERS */
 
         .container-grey {
             width: 100%;
@@ -38,7 +41,15 @@
 
         .container-white {
             width: 100%;
-            background-color: rgb(255, 255, 255);
+            height: 2000px;
+            /* background-color: rgb(255, 255, 255); */
+            background-color: rgb(144, 238, 163);
+            top: -40px;
+            bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            position: relative;
+            z-index: -1;
         }
 
         .container-top {
@@ -50,10 +61,12 @@
 
         .container-bottom {
             width: 83.33%;
-            height: 1648px;
+            /* height: 1648px; */
             margin-left: auto;
             margin-right: auto;
         }
+
+/* NAVBAR */
 
         .navbar {
             width: 100%;
@@ -181,6 +194,8 @@
             position: relative;
         } */
 
+/* PRESENTATION */
+
         .presentation-big, .presentation-small {
             color: rgb(255, 255, 255);
             width: 100%;
@@ -209,9 +224,12 @@
             /* position: relative; */
         }
 
+/* PIC BOTTOM */
+
         .bottom-pic {
             margin-left: auto;
             margin-right: auto;
+            bottom: -40%;
             max-width: 1920px;
             width: 100%;
             height: 800px;
@@ -219,6 +237,7 @@
             background-image: url('https://images.unsplash.com/photo-1524785281156-c3c68d1e03c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format');
             background-size: cover;
             background-repeat: no-repeat;
+            position: absolute;
         }
 
         .btn {
@@ -229,9 +248,12 @@
             color: rgb(255, 255, 255);
             font-family: Poppins;
             font-size: 15px;
+            font-weight: 700;
             border: none;
 
         }
+
+/* HANGING */
 
         .container-hanging {
             display: block;
@@ -239,9 +261,11 @@
             height: 400px;
             margin-left: auto;
             margin-right: auto;
-            /* position: relative; */
+            position: relative;
             transform: translateY(-50%);
             bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
     
         }
 
@@ -249,15 +273,17 @@
             width: 33.33%;
             height: 400px;
             float: left;
+            position: relative;
         }
 
         .phone-box {
-        background-color: rgb(56, 91, 178);
-        color: rgb(255, 255, 255);
+            background-color: rgb(56, 91, 178);
+            color: rgb(255, 255, 255);
         }
         
         .phone {
             background: url('https://static.thenounproject.com/png/2647105-200.png');
+            /* background: url('https://img-premium.flaticon.com/png/512/862/862028.png?token=exp=1621635775~hmac=9dd2ef8eac7179a0386c6251b056c367'); */
             filter: invert(100%);
             background-repeat: no-repeat;
             background-size: cover;
@@ -270,6 +296,7 @@
 
         .map-box {
             background-color: rgb(68, 108, 205);
+            color: rgb(255, 255, 255);
         }   
 
         .map {
@@ -285,10 +312,12 @@
 
         .calendar-box {
             background-color: rgb(248, 248, 248);
+            color: rgb(6, 6, 6);
         }
 
         .calendar {
-            background: url('https://static.thenounproject.com/png/2647105-200.png');
+            /* background: url('https://image.flaticon.com/icons/png/512/3281/3281240.png'); */
+            background: url('https://image.flaticon.com/icons/png/512/2738/2738399.png');          
             background-repeat: no-repeat;
             background-size: cover;
             width: 60px;
@@ -304,8 +333,99 @@
             margin-top: 28px;
         }
 
-        
+        .hang-box-name {
+            width: 80%;
+            font-size: 1.59rem;
+            font-weight: 700;
+            margin-left: 10%;
+            top: 174px;
+            position: absolute;
+        }
 
+        .hang-box-txt {
+            top: 224px;
+            position: absolute;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+            font-size: 1.12rem;
+        }
+
+        .hang-box-link {
+            font-size: 0.882rem;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            text-decoration: none;
+            top: 307px;
+            position: absolute;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: auto;
+            padding-bottom: 5px;
+            border-bottom: 3px solid rgb(255, 255, 255);
+        }
+
+        .working-time-box {
+            top: 224px;
+            position: absolute;
+            width: 100%;
+            font-size: 1.12rem;
+        }
+
+        .workdays {
+            color: rgb(108, 108, 108);
+            display: flex;
+            position: relative;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+            margin-bottom: 17px;
+            justify-content: space-between;
+ 
+        }
+/* OFFER */
+        
+        .offer-box {
+            width: 38.94%;
+            height: 187px;
+            color: rgb(6, 6, 6);
+            font-size: 2.294rem;
+            font-weight: 700;
+            float: left;
+        }
+
+        .offer-right-top-box, .offer-right-bottom-box {
+            width: 57%;
+            margin-left: 4%;
+            /* left: 42.94%; */
+            float: left;
+            color: rgb(108, 108, 108);
+            font-size: 1.12rem;
+            /* position: relative; */
+        }
+
+        .offer-right-top-box {
+            height: 102px;
+        }
+
+        .offer-right-bottom-box {
+            height: 71px;
+            margin-top: 39px;
+
+        }
+
+        .signature {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/f/f2/Recep_Tayyip_Erdo%C4%9Fan_signature.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 13.38%;
+            min-width: 100px;
+            height: 127px;
+            margin-top: 14px;
+            float: left;
+            /* position: relative; */
+
+        }
         
 
 /* REACTIONS */
@@ -321,7 +441,7 @@
 
 
 
-/* EKRANO LUZIAI (RESPONSIVE) */
+/* @ MEDIA ALL 1280 */
         @media all and (max-width: 1280px) {
 
             /* html {
@@ -344,7 +464,26 @@
                 height: auto;
                 margin-top: 0;
             }
+
+            .hang-box-name {
+                font-size: 1.3rem;
+            }
+
+            .hang-box-link {
+                top: 335px;
+            }
+
+            .workdays {
+                margin-bottom: 7px;
+            }
+
+            .offer-right-top-box {
+                height: unset;
+            }
+
         }
+
+/* @ MEDIA ALL 1200 */
 
         @media all and (max-width: 1200px) {
 
@@ -364,6 +503,19 @@
             .navbar-link {
                 line-height: 18px;
                 margin-bottom: -12px;
+            }
+
+/* @ MEDIA 1200 LANGUAGES */
+
+            .languages {
+            /* display: inline-block; */
+                width: 40px;
+                height: 24px;
+                margin-top: 64px;
+                margin-bottom: 64px;
+                position: absolute;
+                right: 70px;
+                float: right;
             }
 
             .icon-find {
@@ -386,11 +538,6 @@
                 left: 0;
             }
 
-            .languages {
-                width: 50px;
-                right: 90px;
-            }
-
             .presentation-big {
                 font-size: 5vw;
                 height: auto;
@@ -406,10 +553,37 @@
                 margin-top: 0;
             }
 
+/* @ MEDIA 1200 HANG BOX */
+
+            .hang-box-name {
+                font-size: 1.1rem;
+            }
+
+            .hang-box-txt {
+                font-size: 1rem;
+            }
+
+            .working-time-box {
+                font-size: 0.9rem;
+            }
+
+            .workdays {
+                margin-bottom: 3px;
+            }
+
             .navbar-link:hover {
             border-bottom: solid 2px #FFFFFF;
             /* padding-bottom: -44px; */
             }
+
+            .offer-box {
+                height: unset;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media all and (max-width: 780px) {
+
         }
 
 
@@ -447,7 +621,7 @@
                 <p class= 'presentation-small'>
                     We are dental care clinic that helps people to take care of their health and we have best dental doctors in here.
                 </p>
-                <button class='btn'>Learn More</button>
+                <a href='#'><button class='btn'>Learn More</button></a>
                 
             <!-- </div> -->
 
@@ -462,25 +636,66 @@
         <div class= 'phone-box'>
             <div class='phone'></div>
             <hr style='color: rgb(71,103,183);'>
+            <div class='hang-box-name'>Emergency Call</div>
+            <div class='hang-box-txt'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</div>
+            <a href='#' class='hang-box-link'>CALL US NOW</a>
         </div>
+
         <div class= 'map-box'>
             <div class='map'></div>
             <hr style='color: rgb(82,119,208);'>
+            <div class='hang-box-name'>Where Are We?</div>
+            <div class='hang-box-txt'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</div>
+            <a href='#' class='hang-box-link'>SEE ON MAP</a>
         </div>
+
         <div class= 'calendar-box'>
             <div class='calendar'></div>
             <hr style='color: rgb(212,212,212);'>
+            <div class='hang-box-name'>Opening Hours</div>
+
+            <div class='working-time-box'>
+                <div class='workdays'>
+                    <div class='day'>Mon - Fri:</div>
+                    <div class='hours'>8:00am - 7:00pm</div>
+                </div>
+
+                <div class='workdays'>
+                    <div class='day'>Saturday:</div>
+                    <div class='hours'>9:00am - 6:00pm</div>
+                </div>
+
+                <div class='workdays'>
+                    <div class='day'>Sunday:</div>
+                    <div class='hours'>Closed</div>
+                </div>
+            </div>
+
         </div>
+
     </div>
 
     <div class='container-white'>
         <div class= 'container-bottom'>
-            <div class= 'ChooseOurClinic'>ChooseOurClinic</div>
+            <div class= 'offer-box'>
+                Choose Our Clinic, Choose The Best Care For Yourself and Your Family
+            </div>
+
+            <div class='offer-right-top-box'>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </div>
+
+            <div class='offer-right-bottom-box'>
+                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </div>
+
+            <div class='signature'></div>
 
         </div>
+        <div class='bottom-pic'></div>
     </div>
 
-    <div class='bottom-pic'></div>
+
 
 
 
@@ -489,6 +704,15 @@
         let w=Math.max(document.documentElement.clientWidth);
         console.log('Ekrano plotis: ' + w);
     })
+
+    let myg = document.querySelectorAll('.navbar-link');
+    console.log('Classiu yra: ' + myg.length);
+
+    for(let i=0; i < myg.length; i++) {
+        document.querySelectorAll('.navbar-link')[i].addEventListener('click', () => {
+        alert('Paspaudete virsutini linka.');
+    });
+    }
 
     </script>
 
