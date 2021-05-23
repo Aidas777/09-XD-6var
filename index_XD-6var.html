@@ -43,7 +43,7 @@
             width: 100%;
             height: 2000px;
             /* background-color: rgb(255, 255, 255); */
-            background-color: rgb(144, 238, 163);
+            background-color: rgb(206, 233, 211);
             top: -40px;
             bottom: 0;
             margin-bottom: 0;
@@ -383,20 +383,30 @@
             justify-content: space-between;
  
         }
+/* WHITE CONTAINER */
 /* OFFER */
+
+        .white-container-bottom-left-col {
+            width: 38.94%;
+            float: left;
+            position: relative;
+        }
+
+        .white-container-bottom-right-col {
+            width: 57%;
+            margin-left: 4%;
+            float: left;
+        }
         
         .offer-box {
-            width: 38.94%;
             height: 187px;
             color: rgb(6, 6, 6);
             font-size: 2.294rem;
             font-weight: 700;
-            float: left;
+           
         }
 
         .offer-right-top-box, .offer-right-bottom-box {
-            width: 57%;
-            margin-left: 4%;
             /* left: 42.94%; */
             float: left;
             color: rgb(108, 108, 108);
@@ -414,17 +424,41 @@
 
         }
 
+        .signature-box {
+            width: 69.18%;
+            height: 127px;
+        }
+
         .signature {
             background: url('https://upload.wikimedia.org/wikipedia/commons/f/f2/Recep_Tayyip_Erdo%C4%9Fan_signature.png');
             background-repeat: no-repeat;
             background-size: contain;
-            width: 13.38%;
-            min-width: 100px;
+            width: 49.65%;
+            /* width: 13.38%; */
+            /* width: 214px; */
+            /* min-width: 100px; */
             height: 127px;
             margin-top: 14px;
             float: left;
-            /* position: relative; */
+        }
 
+        .signature-owner {
+            float: left;
+            margin-left: 61px;
+            margin-top: 32;
+            margin-bottom: 0;
+            width: 157px;
+            height: 32px;
+            font-size: 1.352rem;
+            font-weight: 700;
+            margin-left: 61px;
+
+        }
+
+        .sign-owner-duty {
+            float: left;
+            margin-left: 61px;
+            margin-top: 2px;
         }
         
 
@@ -477,8 +511,13 @@
                 margin-bottom: 7px;
             }
 
+            .offer-box {
+                height: auto;
+                font-size: 1.5rem;
+            }
+
             .offer-right-top-box {
-                height: unset;
+                height: auto;
             }
 
         }
@@ -577,8 +616,15 @@
             }
 
             .offer-box {
-                height: unset;
+                /* height: auto; */
                 font-size: 1.5rem;
+            }
+
+            .signature-owner {
+                font-size: 1rem;
+            }
+            .sign-owner-duty {
+                font-size: 0.8rem;
             }
         }
 
@@ -677,19 +723,32 @@
 
     <div class='container-white'>
         <div class= 'container-bottom'>
-            <div class= 'offer-box'>
-                Choose Our Clinic, Choose The Best Care For Yourself and Your Family
+            <div class= 'white-container-bottom-left-col'>
+                <div class= 'offer-box'>
+                    Choose Our Clinic, Choose The Best Care For Yourself and Your Family
+                </div>
+
+                <div class='signature-box'>
+                    <div class='signature'></div>
+                    <p class='signature-owner'>Tom Henders</p>
+                    <p class='sign-owner-duty'>Head Dentist</p>
+                </div>
+
             </div>
 
-            <div class='offer-right-top-box'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </div>
+            <div class='white-container-bottom-right-col'>
 
-            <div class='offer-right-bottom-box'>
-                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-            </div>
+                <div class='offer-right-top-box'>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
 
-            <div class='signature'></div>
+                <div class='offer-right-bottom-box'>
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+                <button class='btn'>See Our Services</button>
+
+            </div>
 
         </div>
         <div class='bottom-pic'></div>
