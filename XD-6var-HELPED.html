@@ -17,7 +17,6 @@
 
         * {
             box-sizing: border-box;
-            /* outline: solid 1px red; */
         }
 
         html {
@@ -31,30 +30,31 @@
             /* height: 3000px; */
         }
 
-        /* .clearfix {
+        .clearfix {
             overflow: auto;
-        } */
+        }
 
-/* OE CONTAINERS */
+/* CONTAINERS */
 
         .container-grey {
             width: 100%;
             background-color: rgba(0, 0, 0, 0.31);
-            /* height: 1000px; */
+            height: 1000px;
             position: relative;
         }
 
         .container-white {
             width: 100%;
-            /* height: 2000px; */
+            height: 2000px;
             /* background-color: rgb(255, 255, 255); */
             background-color: rgb(206, 233, 211);
             top: 0;
             bottom: 0;
             margin-bottom: 0;
+            padding-top: 351px;
             padding-bottom: 0;
             position: relative;
-            /* z-index: -1; */
+            /* z-index: 999999999999; */
         }
 
         .container-top {
@@ -66,20 +66,21 @@
 
         .container-bottom {
             width: 83.33%;
+            /* height: 1648px; */
             margin-left: auto;
             margin-right: auto;
-            padding-top: 360px;
-            /* display: flex; */
-            /* overflow: auto; */
         }
 
-/* OE NAVBAR */
+/* NAVBAR */
 
         .navbar {
             width: 100%;
+            height: 151px;
             position: relative;
             border-bottom: solid 1px rgb(255, 255, 255);
+            /* background-color: rgba(0, 0, 0, 0.31); */
             /* border-bottom: solid 1px red; */
+            /* background-color: slateblue; */
             display: flex;
             /* flex-wrap: wrap; */
             /* float: left; */
@@ -103,6 +104,7 @@
             /* width: 769px; */
             width: 48.06%;
             min-width: 500px;
+            /* min-width: 400px; */
             justify-content: space-between;
 
         }
@@ -124,13 +126,11 @@
         .languages {
             /* display: inline-block; */
             width: 70px;
-            /* width: 4.375%; */
-            /* height: 24px; */
+            height: 24px;
             margin-top: 64px;
             margin-bottom: 64px;
             position: absolute;
             right: 115px;
-            /* right: 7.19%; */
             float: right;
         }
 
@@ -199,40 +199,57 @@
             position: relative;
         } */
 
-/* OE PRESENTATION */
+/* PRESENTATION */
 
         .presentation-big, .presentation-small {
             color: rgb(255, 255, 255);
             width: 100%;
             margin-bottom: 0;
-            /* position: relative; */
+            position: relative;
         }
 
         .presentation-big {
-            font-size: 4.4706rem;
+            font-size: 76px;
             font-weight: 600;
-            /* line-height: 93px; */
+            line-height: 93px;
+            /* top: 132px; */
             margin-top: 132px;
             width: 47.56%;
-            /* height: 218px; */
+            height: 218px;
             /* position: relative; */
         }
 
         .presentation-small {
             font-size: 1.12rem;
-            /* line-height: 31px; */
+            line-height: 31px;
             width: 47.56%;
-            /* height: 62px; */
-            margin-top: 0px;
+            height: 62px;
+            margin-top: -16px;
             /* top: 339px; */
             /* position: relative; */
         }
 
-        .btn {
+/* PIC BOTTOM */
+
+        .bottom-pic {
+            margin-left: auto;
+            margin-right: auto;
+            bottom: -40%;
+            max-width: 1920px;
+            width: 100%;
+            height: 800px;
+            /* background-image: url('https://images.unsplash.com/photo-1551441044-b612a0f89b28?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920'); */
+            background-image: url('https://images.unsplash.com/photo-1524785281156-c3c68d1e03c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+        }
+
+/* OE BUTTONS */
+
+        .btn, .btn-srv {
             width: 210px;
             height: 65px;
-            margin-top: 50px;
-            margin-bottom: 0;
             background-color: rgb(68, 108, 205);
             color: rgb(255, 255, 255);
             font-family: Poppins;
@@ -241,28 +258,37 @@
             border: none;
         }
 
+        .btn {
+            margin-top: 50px;
+        }
+
+        .btn-srv {
+            margin-top: 44px;
+        }
 
 /* OE HANGING */
 
         .container-hanging {
+            
             display: block;
             width: 83.33%;
             height: 400px;
             margin-left: auto;
             margin-right: auto;
-            position: relative;
-            transform: translateY(50%);
+            position: absolute;
+            transform: translateY(50%) translateX(-50%);
             bottom: 0;
-            top: 100%;
             margin-bottom: 0;
             padding-bottom: 0;
-            z-index: 1;
+            top: 100%;
+            z-index: 99999;
+            left: 50%;
     
         }
 
         .phone-box, .map-box, .calendar-box {
             width: 33.33%;
-            height: 400px;
+            height: 100%;
             float: left;
             position: relative;
         }
@@ -374,31 +400,23 @@
             justify-content: space-between;
  
         }
-/* OE WHITE CONTAINER */
-/* OE OFFER */
-
-        .container-bottom-upper-box {
-            display: flex;
-        }
+/* WHITE CONTAINER */
+/* OFFER */
 
         .white-container-bottom-left-col {
             width: 38.94%;
             float: left;
-            /* position: relative; */
-            /* height: 337px; */
+            position: relative;
         }
 
         .white-container-bottom-right-col {
-            /* height: 314px; */
             width: 57%;
             margin-left: 4%;
             float: left;
-            /* height: 337px; */
         }
         
         .offer-box {
-            /* height: 187px; */
-            line-height: 56px;
+            height: 187px;
             color: rgb(6, 6, 6);
             font-size: 2.294rem;
             font-weight: 700;
@@ -413,139 +431,64 @@
             /* position: relative; */
         }
 
-        /* .offer-right-top-box {
+        .offer-right-top-box {
             height: 102px;
-        } */
+        }
 
         .offer-right-bottom-box {
-            /* height: 71px; */
+            height: 71px;
             margin-top: 39px;
 
         }
 
         .signature-box {
-            width: 70%;
-            /* width: 69.18%; */
-            /* height: 127px; */
-            margin-top: 14px;
-            display: flex;
+            width: 70.5%;
+            height: 127px;
         }
 
         .signature {
             background: url('https://upload.wikimedia.org/wikipedia/commons/f/f2/Recep_Tayyip_Erdo%C4%9Fan_signature.png');
             background-repeat: no-repeat;
             background-size: contain;
-            min-width: 49.07%;
+            width: 49.65%;
             /* width: 13.38%; */
             /* width: 214px; */
             /* min-width: 100px; */
             height: 127px;
+            margin-top: 14px;
             float: left;
-            border: none;
-
-        }
-
-        .signarer {
-            float: left;
-            margin-left: 14.15%;
-            margin-top: 32px;
-            margin-bottom: 37px;
         }
 
         .signature-owner {
             float: left;
+            margin-left: 61px;
+            margin-top: 32px;
             margin-bottom: 0;
-            margin-top: 0;
-            /* width: 157px; */
-            /* height: 32px; */
+            width: 36.43%;
+            height: 32px;
             font-size: 1.352rem;
             font-weight: 700;
+            margin-left: 61px;
 
         }
 
         .sign-owner-duty {
             float: left;
+            margin-left: 61px;
             margin-top: 2px;
-        }
-
-        .container-bottom-lower-box {
-            display: flex;
-            width: 100%;
-            padding-top: 9.353rem;
-            justify-content: space-between;
-            /* margin-left: auto;
-            margin-right: auto; */
-            /* float: left; */
-
-        }
-
-/* OE FOOT */
-
-        .foot {
-            width: 31.25%;
-        }
-
-        .foot.first {
-            font-size: 2.294rem;
-            font-weight: 700;
-            padding-top: 3.765rem;
-            padding-bottom: 5.06rem;
-            margin-top: 0;
-            margin-bottom: 0;
-            line-height: normal;
-            /* padding-right: 49px; */
-        }
-
-        .foot.first p {
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        .foot-name {
-            font-size: 1.588rem;
-            font-weight: 700;
-            text-align: left;
-            margin-top: 3.12rem;
-            margin-bottom: 0;
-
-
-        }
-
-        .foot-txt {
-            margin-top: 0;
-            padding-top: 13px;
-            font-size: 1.12rem;
-            margin-bottom: 0;
-        }
-
-/* OE PIC BOTTOM */
-
-        .bottom-pic {
-            margin-top: 8.647rem;
-            margin-left: auto;
-            margin-right: auto;
-            /* bottom: 0; */
-            max-width: 1920px;
-            width: 100%;
-            height: 800px;
-            /* background-image: url('https://images.unsplash.com/photo-1551441044-b612a0f89b28?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920'); */
-            background-image: url('https://images.unsplash.com/photo-1524785281156-c3c68d1e03c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format');
-            background-size: cover;
-            background-repeat: no-repeat;
-            /* float: left; */
-            /* position: absolute; */
         }
         
 
-/* OE REACTIONS */
+/* REACTIONS */
         .navbar-link:hover {
             border-bottom: solid 3px #FFFFFF;
             /* padding-bottom: -7px; */
         }
 
-        .icon-find, .ru, .en, .btn:hover {
+        .icon-find, .ru, .en, .btn, .btn-srv:hover {
             cursor: pointer;
         }
+
 
 
 
@@ -553,9 +496,9 @@
 /* @ MEDIA ALL 1280 */
         @media all and (max-width: 1280px) {
 
-            html {
+            /* html {
                 font-size: 14px;
-            }
+            } */
 
             .navbar-links-box {
                 margin-left: 0;
@@ -563,13 +506,9 @@
             }
             
             .presentation-big {
-                font-size: 3.6rem;
-                line-height: normal;
+                font-size: 5vw;
+                height: auto;
                 
-            }
-
-            .container-bottom {
-                padding-top: 18rem;
             }
 
             .presentation-small {
@@ -591,16 +530,12 @@
             }
 
             .offer-box {
-                line-height: normal;
+                height: auto;
                 font-size: 1.5rem;
             }
 
             .offer-right-top-box {
                 height: auto;
-            }
-
-            .signature-box {
-                width: 92%;
             }
 
         }
@@ -627,16 +562,17 @@
                 margin-bottom: -12px;
             }
 
-            .container-bottom {
-                padding-top: 18rem;
-            }
-
-/* @ MEDIA 1200 */
+/* @ MEDIA 1200 LANGUAGES */
 
             .languages {
             /* display: inline-block; */
-                width: 50px;
+                width: 40px;
+                height: 24px;
+                margin-top: 64px;
+                margin-bottom: 64px;
+                position: absolute;
                 right: 70px;
+                float: right;
             }
 
             .icon-find {
@@ -660,7 +596,10 @@
             }
 
             .presentation-big {
-                font-size: 2.4rem;
+                font-size: 5vw;
+                height: auto;
+                line-height: unset;
+                
             }
 
             .presentation-small {
@@ -697,11 +636,6 @@
             .offer-box {
                 /* height: auto; */
                 font-size: 1.5rem;
-                line-height: normal;
-            }
-
-            .signature-box {
-                width: 80%;
             }
 
             .signature-owner {
@@ -712,38 +646,7 @@
             }
         }
 
- /* @ MEDIA 780 ALL */
-
-        @media all and (max-width: 900px) {
-
-            .signature-box {
-                width: 100%;
-            }
-
-            
-            .signature-owner {
-                font-size: 0.9rem;
-            }
-
-            .signarer {
-                margin-left: 0.8rem;
-            }
-
-        }
-
- /* @ MEDIA 780 ALL */
-
-        @media all and (max-width: 790px) {
-
-            .languages {
-                display: none;
-            }
-
-            .hang-box-txt, .workdays {
-                font-size: 0.8rem;
-                margin-left: 0 auto;
-                margin-right: 0 auto;
-            }
+        @media all and (max-width: 780px) {
 
         }
 
@@ -790,117 +693,84 @@
         </div>
 
 
-
-
-
-        <div class='container-hanging'>
-            <div class= 'phone-box'>
-                <div class='phone'></div>
-                <hr style='color: rgb(71,103,183);'>
-                <div class='hang-box-name'>Emergency Call</div>
-                <div class='hang-box-txt'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</div>
-                <a href='#' class='hang-box-link'>CALL US NOW</a>
-            </div>
-    
-            <div class= 'map-box'>
-                <div class='map'></div>
-                <hr style='color: rgb(82,119,208);'>
-                <div class='hang-box-name'>Where Are We?</div>
-                <div class='hang-box-txt'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</div>
-                <a href='#' class='hang-box-link'>SEE ON MAP</a>
-            </div>
-    
-            <div class= 'calendar-box'>
-                <div class='calendar'></div>
-                <hr style='color: rgb(212,212,212);'>
-                <div class='hang-box-name'>Opening Hours</div>
-    
-                <div class='working-time-box'>
-                    <div class='workdays'>
-                        <div class='day'>Mon - Fri:</div>
-                        <div class='hours'>8:00am - 7:00pm</div>
-                    </div>
-    
-                    <div class='workdays'>
-                        <div class='day'>Saturday:</div>
-                        <div class='hours'>9:00am - 6:00pm</div>
-                    </div>
-    
-                    <div class='workdays'>
-                        <div class='day'>Sunday:</div>
-                        <div class='hours'>Closed</div>
-                    </div>
-                </div>
-    
-            </div>
-    
-        </div>
-
-
-
-
-
         
     </div>
 
-    
+    <div class='container-hanging'>
+        <div class= 'phone-box'>
+            <div class='phone'></div>
+            <hr style='color: rgb(71,103,183);'>
+            <div class='hang-box-name'>Emergency Call</div>
+            <div class='hang-box-txt'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</div>
+            <a href='#' class='hang-box-link'>CALL US NOW</a>
+        </div>
 
-    <div class='container-white'>
-        <div class= 'container-bottom'>
-            <div class='container-bottom-upper-box'>
-                <div class= 'white-container-bottom-left-col'>
-                    <div class= 'offer-box'>
-                        <p>
-                            Choose Our Clinic, Choose The Best Care For Yourself and Your Family
-                        </p>
-                    </div>
+        <div class= 'map-box'>
+            <div class='map'></div>
+            <hr style='color: rgb(82,119,208);'>
+            <div class='hang-box-name'>Where Are We?</div>
+            <div class='hang-box-txt'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</div>
+            <a href='#' class='hang-box-link'>SEE ON MAP</a>
+        </div>
 
-                    <div class='signature-box'>
-                        <div class='signature'></div>
-                        <div class='signarer'>
-                            <p class='signature-owner'>Tom Henders</p>
-                            <p class='sign-owner-duty'>Head Dentist</p>
-                        </div>
-                    </div>
+        <div class= 'calendar-box'>
+            <div class='calendar'></div>
+            <hr style='color: rgb(212,212,212);'>
+            <div class='hang-box-name'>Opening Hours</div>
 
+            <div class='working-time-box'>
+                <div class='workdays'>
+                    <div class='day'>Mon - Fri:</div>
+                    <div class='hours'>8:00am - 7:00pm</div>
                 </div>
 
-                <div class='white-container-bottom-right-col'>
-
-                    <div class='offer-right-top-box'>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                        </p>
-                    </div>
-
-                    <div class='offer-right-bottom-box'>
-                        <p>
-                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                    </div>
-
-                    <button class='btn'>See Our Services</button>
-
+                <div class='workdays'>
+                    <div class='day'>Saturday:</div>
+                    <div class='hours'>9:00am - 6:00pm</div>
                 </div>
-            </div>
 
-            <div class='container-bottom-lower-box'>
-                    <div class='foot first'>
-                        <p>Our Values</p>
-                    </div>
-                    <div class='foot second'>
-                        <p class='foot-name'>Quality</p>
-                        <p class='foot-txt'>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    </div>
-                    <div class='foot third'>
-                        <p class='foot-name'>Health</p>
-                        <p class='foot-txt'>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    </div>
+                <div class='workdays'>
+                    <div class='day'>Sunday:</div>
+                    <div class='hours'>Closed</div>
+                </div>
             </div>
 
         </div>
 
-        <div class='bottom-pic'><img></div>
+    </div>
+
+    <div class='container-white'>
+        <div class= 'container-bottom clearfix'>
+            <div class= 'white-container-bottom-left-col'>
+                <div class= 'offer-box'>
+                    Choose Our Clinic, Choose The Best Care For Yourself and Your Family
+                </div>
+
+                <div class='signature-box'>
+                    <div class='signature'></div>
+                    <p class='signature-owner'>Tom Henders</p>
+                    <p class='sign-owner-duty'>Head Dentist</p>
+                </div>
+
+            </div>
+
+            <div class='white-container-bottom-right-col'>
+
+                <div class='offer-right-top-box'>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </div>
+
+                <div class='offer-right-bottom-box'>
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </div>
+
+                <a href='#'><button class='btn-srv'>See Our Services</button></a>
+
+            </div>
+
+        </div>
+
+        <div class='bottom-pic'></div>
     </div>
 
 
