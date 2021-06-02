@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini animacija</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        .boxas {
+            display: flex;
+            background-color: chartreuse;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 40px;
+            transition: height 2s, width 3s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .boxas:hover {
+            height: 500px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='boxas'>
+            <p>Tekstas</p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe XD 6 variantas Aido</title>
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700">  -->
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            /* outline: solid 1px red; */
+        }
+
+        html {
+            font-size: 17px;
+            font-family: Poppins;
+            /* overflow-x: hidden; */
+        }
+
+        body {
+            max-width: 1920px;
+            margin: 0 auto;
+            /* height: 3000px; */
+        }
+
+        /* .clearfix {
+            overflow: auto;
+        } */
+
+/* OE CONTAINERS */
+
+        .container-grey {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.31);
+            position: relative;
+            margin-bottom: -200px;
+        }
+
+        .container-white {
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            /* background-color: rgb(206, 233, 211); */
+            top: 0;
+            bottom: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            position: relative;
+        }
+
+        .container-top {
+            width: 83.33%;
+            /* background-color: hsla(0, 0%, 0%, 0.31); */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container-bottom {
+            width: 83.33%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 21.1765rem;
+            /* display: flex; */
+            /* overflow: auto; */
+        }
+
+/* OE NAVBAR */
+
+        .navbar {
+            width: 100%;
+            position: relative;
+            border-bottom: solid 1px rgb(255, 255, 255);
+            /* border-bottom: solid 1px red; */
+            /* display: flex; */
+            /* flex-wrap: wrap; */
+            /* float: left; */
+            /* flex-direction: row; */
+        }
+
+        .navbar-area {
+            display: flex;
+            /* flex-direction: row; */
+        }
+
+        .navbar-links-box {
+            /* font-size: 17px; */
+            /* font-size: 1vw; */
+            font-weight: 600;
+            font-style: normal;
+            font-variant: normal;
+            
+            display: flex;
+            float: left;
+            padding-top: 3.7647rem;
+            padding-bottom: 3.7647rem;
+            margin-left: 17.12%;
+            /* border-bottom: solid 1px slateblue; */
+            /* width: 769px; */
+            width: 48.06%;
+            min-width: 500px;
+            justify-content: space-between;
+
+        }
+
+        .navbar-link {
+            /* margin-left: 50px;
+            margin-right: 50px; */
+            line-height: 1.4118rem;
+            /* height: 24px; */
+            color: #FFFFFF;
+            text-decoration: none;
+            padding-bottom: 7px;
+            border-bottom: solid 3px transparent;
+            padding-top: 7px;
+            border-top: solid 3px transparent;
+            float: left;
+            /* display: flex; */
+
+        }
+
+        .languages {
+            /* display: inline-block; */
+            width: 4.1176rem;
+            /* width: 4.375%; */
+            /* height: 24px; */
+            padding-top: inherit;
+            padding-bottom: inherit;
+            /* padding-bottom: 3.7647rem; */
+            position: absolute;
+            right: 115px;
+            /* right: 7.19%; */
+            /* float: right; */
+            justify-content: space-between;
+            display: flex;
+            align-self: center;
+        }
+
+        .ru, .en {
+            /* position: absolute; */
+            /* padding-top: 64px;
+            padding-bottom: 64px; */
+            line-height: 1.4118rem;
+            /* display: flex; */
+            /* float: left; */
+            font-weight: 700;
+            border-bottom: solid 3px transparent ;
+            margin-bottom: 7px;
+            padding-top: 7px;
+            border-top: solid 3px transparent;
+            
+        }
+
+        .ru {
+            color: rgba(255, 255, 255, 0.502);
+            /* left: 0; */
+        }
+
+        .en {
+            color: rgb(255, 255, 255);
+            /* right: 0; */
+            /* margin-right: 0; */
+            /* right: 115px; */
+            /* padding-right: 0; */
+            /* float: right; */
+            /* flex-direction: row; */
+        }
+
+        .icon-find {
+            /* display: none; */
+            display: block; 
+            /* width: 4.06%; */
+            /* height: auto; */
+            width: 3.8235rem;
+            height: 3.8235rem;
+            /* min-width: 40px; */
+            /* float: left; */
+            margin-top: auto;
+            margin-bottom: auto;
+            /* margin-top: 2.5294rem;
+            margin-bottom: 2.5294rem; */
+            margin-right: 0;
+            margin-left: auto;
+            color: white;
+            font-size: 19px;
+            position: relative;
+           
+            background-color: rgb(68, 108, 205);
+
+            justify-items: center;
+            
+        }
+
+        .fa-search {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            /* margin-left: auto;
+            margin-right: auto; */
+            /* display: flex; */
+
+        }
+
+        .toglas {
+            display: none;
+            width: 45px;
+            height: 45px;
+            margin-top: 39px;
+            margin-bottom: 39px;
+            /* margin-top: 39px; */
+            padding-left: 7.5px;
+            right: 0;
+            margin-left: auto;
+            /* background-color: transparent; */
+            background-color: rgb(68, 108, 205);
+            border: none;
+            /* position: fixed; */
+            /* position: absolute; */
+
+        }
+
+        .rod, .rod:before, .rod:after {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: rgb(255, 255, 255);
+            z-index: 99999;
+            /* position: relative; */
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            content: "";
+
+        }
+
+        .rod {
+            position: relative;
+        }
+
+        .rod:before {
+            top: -7px;
+            position: absolute;
+        }
+
+        .rod:after {
+            top: 7px;
+            position: absolute;
+        }
+
+
+        /* .main-info-box {
+            color: rgb(255, 255, 255);
+            width: 100%;
+            margin-top: 0;
+            position: relative;
+        } */
+
+/* OE PRESENTATION */
+
+        .presentation-big, .presentation-small {
+            color: rgb(255, 255, 255);
+            width: 100%;
+            margin-bottom: 0;
+            /* position: relative; */
+        }
+
+        .presentation-big {
+            font-size: 4.4706rem;
+            font-weight: 600;
+            /* line-height: 93px; */
+            margin-top: 7.7647rem;
+            width: 47.56%;
+            /* height: 218px; */
+            /* position: relative; */
+        }
+
+        .presentation-small {
+            font-size: 1.12rem;
+            /* line-height: 31px; */
+            width: 47.56%;
+            /* height: 62px; */
+            margin-top: 0px;
+            /* top: 339px; */
+            /* position: relative; */
+        }
+
+        .btn {
+            width: 12.3529rem;
+            height: 3.8235rem;
+            margin-top: 2.9412rem;
+            /* margin-bottom: 7.8235rem; */
+            margin-bottom: 0;
+            background-color: rgb(68, 108, 205);
+            color: rgb(255, 255, 255);
+            font-family: Poppins;
+            font-size: 15px;
+            font-weight: 700;
+            border: none;
+        }
+
+
+/* OE HANGING */
+
+        .container-hanging {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            /* height: 400px; */
+            margin-top: 7.8235rem;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            /* padding-top: 133px; */
+            /* transform: translate(0, 50%); */
+            /* bottom: 0; */
+            /* top: 100%; */
+            margin-bottom: 0;
+            padding-bottom: 0;
+            z-index: 1;
+    
+        }
+
+        .phone-box, .map-box, .calendar-box {
+            width: 33.33%;
+            height: 100%;
+            min-height: 23.5294rem;
+            float: left;
+            position: relative;
+        }
+
+        .phone-box, .map-box, .calendar-box {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .phone-box {
+            background-color: rgb(56, 91, 178);
+            color: rgb(255, 255, 255);
+        }
+        
+        .phone-pic {
+            background: url('https://static.thenounproject.com/png/2647105-200.png');
+            /* background: url('https://img-premium.flaticon.com/png/512/862/862028.png?token=exp=1621635775~hmac=9dd2ef8eac7179a0386c6251b056c367'); */
+            filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+            margin-top: 3.6471rem;
+            margin-left: 2.9412rem;
+
+        }
+
+        .map-box {
+            background-color: rgb(68, 108, 205);
+            color: rgb(255, 255, 255);
+        }   
+
+        .map-pic {
+            background: url('https://image.flaticon.com/icons/png/512/1512/1512870.png');
+            filter: invert(100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+            margin-top: 3.6471rem;
+            margin-left: 2.9412rem;
+        }
+
+        .calendar-box {
+            background-color: rgb(248, 248, 248);
+            color: rgb(6, 6, 6);
+        }
+
+        .calendar-pic {
+            /* background: url('https://image.flaticon.com/icons/png/512/3281/3281240.png'); */
+            background: url('https://image.flaticon.com/icons/png/512/2738/2738399.png');          
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+            margin-top: 3.6471rem;
+            margin-left: 2.9412rem;
+        }       
+
+
+        hr {
+            width: 80%;
+            border: 1px solid;
+            margin-top: 1.6471rem;
+            margin-bottom: 0;
+        }
+
+        .hang-box-name {
+            width: 80%;
+            font-size: 1.59rem;
+            font-weight: 700;
+            margin-left: 10%;
+            margin-top: 1.3529rem;
+            margin-bottom: 0;
+            /* top: 174px; */
+            /* position: absolute; */
+        }
+
+        .hang-box-txt {
+            /* top: 224px; */
+            /* position: absolute; */
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 13px;
+            margin-bottom: 0;
+            width: 80%;
+            font-size: 1.12rem;
+            /* line-height: 34px; */
+        }
+
+        .hang-box-link {
+            display: inline-flex;
+            font-size: 0.882rem;
+            color: rgb(255, 255, 255);
+            font-weight: 700;
+            text-decoration: none;
+            /* top: 307px; */
+            /* position: absolute; */
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 1.1176rem;
+            margin-bottom: 3.7647rem;
+            width: auto;
+            padding-bottom: 0.2941rem;
+            border-bottom: 0.1765rem solid rgb(255, 255, 255);
+        }
+
+        .working-time-box {
+            /* top: 224px;
+            position: absolute; */
+            margin-top: 0.8235rem;
+            width: 100%;
+            font-size: 1.12rem;
+        }
+
+        .workdays {
+            color: rgb(108, 108, 108);
+            display: flex;
+            position: relative;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 80%;
+            margin-bottom: 1rem;
+            justify-content: space-between;
+ 
+        }
+
+        .workdays p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+/* OE WHITE CONTAINER */
+/* OE OFFER */
+
+        .container-bottom-upper-box {
+            display: flex;
+        }
+
+        .white-container-bottom-left-col {
+            width: 38.94%;
+            float: left;
+            /* position: relative; */
+            /* height: 337px; */
+        }
+
+        .white-container-bottom-right-col {
+            /* height: 314px; */
+            width: 57%;
+            margin-left: 4%;
+            float: left;
+            /* height: 337px; */
+        }
+        
+        .offer-box {
+            /* height: 187px; */
+            line-height: 3.2941rem;
+            color: rgb(6, 6, 6);
+            font-size: 2.294rem;
+            font-weight: 700;
+           
+        }
+
+        .offer-right-top-box, .offer-right-bottom-box {
+            /* left: 42.94%; */
+            float: left;
+            color: rgb(108, 108, 108);
+            font-size: 1.12rem;
+            /* position: relative; */
+        }
+
+        /* .offer-right-top-box {
+            height: 102px;
+        } */
+
+        .offer-right-bottom-box {
+            /* height: 71px; */
+            margin-top: 2.2941rem;
+
+        }
+
+        .signature-box {
+            width: 70%;
+            /* width: 69.18%; */
+            /* height: 127px; */
+            margin-top: 0.8235rem;
+            display: flex;
+        }
+
+        .signature {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/f/f2/Recep_Tayyip_Erdo%C4%9Fan_signature.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            min-width: 49.07%;
+            /* width: 13.38%; */
+            /* width: 214px; */
+            /* min-width: 100px; */
+            height: 7.4706rem;
+            float: left;
+            border: none;
+
+        }
+
+        .signarer {
+            float: left;
+            margin-left: 14.15%;
+            margin-top: 1.8824rem;
+            margin-bottom: 2.1765rem;
+        }
+
+        .signature-owner {
+            float: left;
+            margin-bottom: 0;
+            margin-top: 0;
+            /* width: 157px; */
+            /* height: 32px; */
+            font-size: 1.352rem;
+            font-weight: 700;
+
+        }
+
+        .sign-owner-duty {
+            float: left;
+            margin-top: 2px;
+        }
+
+
+/* OE FOOT */
+
+        .container-bottom-lower-box {
+            display: flex;
+            width: 100%;
+            padding-top: 9.353rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /* margin-left: auto;
+            margin-right: auto; */
+            /* float: left; */
+
+        }
+
+        .foot {
+            width: 31.25%;
+            border-top: rgb(212, 212, 212) 1px solid;
+        }
+
+        .foot.first {
+            font-size: 2.294rem;
+            font-weight: 700;
+            padding-top: 3.765rem;
+            padding-bottom: 5.06rem;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: normal;
+            /* padding-right: 49px; */
+        }
+
+        .foot.first p {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .foot-name {
+            font-size: 1.588rem;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 3.12rem;
+            margin-bottom: 0;
+
+
+        }
+
+        .foot-txt {
+            margin-top: 0;
+            padding-top: 13px;
+            font-size: 1.12rem;
+            margin-bottom: 0;
+            color: rgb(108, 108, 108);
+        }
+
+/* OE PIC BOTTOM */
+
+        .bottom-pic {
+            margin-top: 8.647rem;
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 1920px;
+            width: 100%;
+            height: 47.06rem;
+            /* background-image: url('https://images.unsplash.com/photo-1551441044-b612a0f89b28?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920'); */
+            /* background-image: url('https://images.unsplash.com/photo-1524785281156-c3c68d1e03c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format'); */
+            /* background-image: url('https://cdn.archilovers.com/projects/279ed7aa-2586-45d9-b79b-a9faefea9361.jpg'); */
+            background-image: url('https://drtarunsdental.com/wp-content/uploads/2020/11/dentalclinic13-3.png');
+            background-size: cover;
+            background-position: left;
+            background-repeat: no-repeat;
+            /* float: left; */
+            /* position: absolute; */
+        }
+        
+
+/* OE REACTIONS */
+        .navbar-link:hover {
+            border-bottom: solid 3px #FFFFFF;
+            transition: all 0.6s ease;
+            /* padding-bottom: -7px; */
+        }
+
+        .icon-find, .ru, .en, .btn, .toglas:hover {
+            cursor: pointer;
+        }
+
+
+
+        /* @media all and (max-width: 900px) {
+
+            .phone-box, .map-box, .calendar-box {
+                width: 100% !important;
+            } */
+
+        /* } */
+
+
+/* @ MEDIA ALL 1280 */
+        @media all and (max-width: 1280px) {
+
+            html {
+                font-size: 14px;
+            }
+
+            .navbar-links-box {
+                margin-left: 0;
+                width: 60%;
+            }
+
+            .navbar-link {
+                /* line-height: 18px; */
+                padding-bottom: 6px;
+                align-self: center ;
+            }
+
+            .presentation-big {
+                font-size: 3.6rem;
+                line-height: normal;
+                
+            }
+
+            .container-bottom {
+                padding-top: 18rem;
+            }
+
+            .presentation-small {
+                font-size: 1rem;
+                height: auto;
+                margin-top: 0;
+            }
+
+            /* .hang-box-name {
+                font-size: 1.59rem;
+            } */
+
+            /* .hang-box-link {
+                top: 335px;
+            } */
+
+            .workdays {
+                /* display: inline-block; */
+                margin-bottom: 7px;
+                font-size: 0.9rem;
+            }
+
+            .offer-box {
+                line-height: normal;
+                font-size: 1.5rem;
+            }
+
+            .offer-right-top-box {
+                height: auto;
+            }
+
+            .signature-box {
+                width: 92%;
+            }
+
+            .bottom-pic {
+                background-size: cover;
+                height: 50vw;
+                width: 100%;
+            }
+
+        }
+
+/* @ MEDIA ALL 1200 */
+
+        @media all and (max-width: 1200px) {
+
+            html {
+                font-size: 14px;
+            }
+
+            /* .navbar {
+                height: 9rem;
+            } */
+
+            .navbar-links-box {
+                width: 30%;
+                margin-left: 0;
+            }
+
+            .navbar-link {
+                /* line-height: 18px; */
+                padding-bottom: 6px;
+                border-bottom: 2px solid transparent;
+                align-self: center ;
+            }
+
+            .container-bottom {
+                padding-top: 18rem;
+            }
+
+            .languages {
+            /* display: inline-block; */
+                width: 50px;
+                right: 70px;
+                align-self: center ;
+            }
+
+            .icon-find {
+                width: 45px;
+                height: 45px;
+                font-size: 14px;
+                /* margin-top: 39px;
+                margin-bottom: 39px; */
+                margin-top: auto;
+                margin-bottom: auto;
+
+            }
+
+            .en {
+                right: 0;
+                /* line-height: 18px; */
+
+            }
+
+            .ru {
+                /* line-height: 18px; */
+                left: 0;
+            }
+
+            .presentation-big {
+                font-size: 2.4rem;
+            }
+
+            .presentation-small {
+                font-size: 1rem;
+                width: 47.56%;
+                height: auto;
+                line-height: unset;
+                margin-top: 0;
+            }
+
+/* ... @ media 1200 hang box */
+
+            /* .hang-box-name {
+                font-size: 1.1rem;
+            } */
+
+            .working-time-box {
+                font-size: 0.9rem;
+            }
+
+            .workdays {
+                /* display: inline-block; */
+                margin-bottom: 3px;
+            }
+
+            .navbar-link:hover {
+            border-bottom: solid 2px #FFFFFF;
+            /* padding-bottom: -44px; */
+            }
+
+            .offer-box {
+                /* height: auto; */
+                font-size: 1.5rem;
+                line-height: normal;
+            }
+
+            .signature-box {
+                width: 91%;
+            }
+
+            .signature-owner {
+                font-size: 1rem;
+            }
+            .sign-owner-duty {
+                font-size: 0.8rem;
+            }
+        }
+
+ /* @ MEDIA 900 ALL */
+
+        @media all and (max-width: 900px) {
+
+            .navbar-links-box {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+
+            .presentation-big, .presentation-small {
+                width: 100%;
+            }
+
+            .container-hanging {
+                margin-top: 5rem
+            }
+
+            .phone-box, .map-box, .calendar-box {
+                width: 100%;
+            }
+
+            .phone-box, .map-box {
+                margin-bottom: 10px;
+            }
+
+            .calendar-box {
+                background-color: rgb(238, 237, 237);
+            }
+
+            .phone-pic, .map-pic, .calendar-pic {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hang-box-name {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .hang-box-link {
+                margin-left: 50%;
+                margin-right: auto;
+                transform: translateX(-50%) ;
+            }
+
+            .container-bottom-upper-box {
+                /* flex-wrap: wrap; */
+                /* flex-direction: column ; */
+                flex-flow: column;
+            }
+
+            .white-container-bottom-left-col,
+            .white-container-bottom-right-col {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .offer-box {
+                text-align: center;
+            }
+
+            .signature-box {
+                width: 100%;
+                justify-content: end;
+                margin-top: 4rem;
+            }
+
+            .signature {
+                min-width: 18%;
+                max-width: 30%;
+                margin-top: auto;
+                margin-bottom: auto;
+                max-height: 5rem;
+                min-height: 4rem;
+            }
+
+            
+            .signature-owner {
+                font-size: 0.9rem;
+            }
+
+            .sign-owner-duty {
+                float: inline-end;
+            }
+
+            .signarer {
+                margin-left: 0.8rem;
+            }
+
+            .presentation-big {
+                margin-top: 4rem;
+                /* width: 47.56%; */
+                /* height: 218px; */
+                /* position: relative; */
+            }
+
+            .offer-right-top-box p{
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .container-bottom-lower-box {
+                padding-top: 3rem;
+            }
+
+            .offer-right-bottom-box {
+                margin-top: 0;
+            }
+
+            .btn-second {
+                float: inline-end;
+            }
+        }
+
+ /* @ MEDIA 790 ALL */
+
+        @media all and (max-width: 790px) {
+
+            html {
+                font-size: 14px;
+            }
+
+
+/* ... nav bar wrapas @790 /// nav bar wrapas /// nav bar wrapas */
+
+            /* .navbar-links-box, .languages, .icon-find {
+                display: none;
+            } */
+/* 
+            .navbar {
+                width: 110%;
+            } */
+
+            .navbar, .navbar-links-box {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                /* border: none; */
+            }
+
+            /* .navbar {
+                border-bottom: transparent;
+                height: 94.7667px;
+            } */
+
+            .navbar-area {
+                /* background-color: rgba(143, 143, 143, 0.7); */
+                background-color: rgba(76, 130, 201, 0.8);
+                display: none;
+            }
+
+            .navbar-area.active {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                position: fixed;
+                margin-top: 5px;
+                /* margin-left: auto; */
+                margin-right: auto;
+                margin-left: -3.33%;
+                /* margin-right: 5%; */
+                width: 90%;
+                z-index: 2;
+
+                animation-name: menu-showB;
+                animation-duration: 0.6s;
+                /* border: solid 1px white; */
+                /* transition-duration: 3s; */
+                /* transition: max-height ease 0.9s; */
+
+            }
+
+            @keyframes menu-showB {
+                from {
+                    background-color: transparent;
+                }
+                to {
+                    background-color: rgba(76, 130, 201, 0.8);
+                }
+            }
+
+            @keyframes menu-showF {
+                from {
+                    color: transparent;
+                    font-size: 0;
+                }
+                to {
+                    color: rgb(255, 255, 255);
+                    font-size: auto;
+                }
+            }
+
+            .languages, .ru, .en {
+                position: relative;
+            }
+
+            .navbar-links-box {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 0;
+                min-width: auto;
+            }
+
+            .languages {
+                width: 50px;
+                padding-bottom: 0;
+                min-width: auto;
+            }
+
+            .navbar-link {
+                width: 30%;
+                margin-top: 0;
+                /* margin-bottom: 14px;
+                padding-bottom: 7px; */
+
+                margin-bottom: 6px;
+                margin-right: auto;
+                margin-left: auto;
+                border-bottom: solid 3px transparent ;
+                /* margin-bottom: -7px; */
+
+                animation-name: menu-showF;
+                animation-duration: 0.6s;
+            }
+
+            .icon-find {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-align: center;
+                
+            }
+
+            .languages {
+                right: auto;
+                margin-top: 0;
+                margin-bottom: 14px;
+            }
+
+            .en {
+                 margin-left: 1rem;
+            }
+
+
+            .toglas {
+                display: block;
+                /* right: 15px; */
+                margin-right: 4.5rem;
+                margin-top: 24px;
+                /* margin-top: 1.75rem; */
+                margin-bottom: 1.75rem;
+                z-index: 3;
+                position: fixed;
+                /* position: relative; */
+            }
+
+
+            .presentation-big, .presentation-small {
+               text-align: center;
+            }
+
+            .btn {
+                width: 10rem;
+                height: 3rem;
+                font-size: 0.9rem;
+            }
+
+            /* .hang-box-name {
+                font-size: 1rem;
+            } */
+
+            .hang-box-txt, .workdays {
+                margin-left: 0 auto;
+                margin-right: 0 auto;
+            }
+
+            /* .map-box > .hang-box-txt {
+                margin-top: 2.6rem;
+            } */
+
+            .phone-box, .map-box {
+                margin-bottom: 10px;
+            }
+
+            .container-bottom-lower-box {
+                padding-top: 3rem;
+            }
+
+            .btn-second {
+                float: inline-end;
+            }
+
+            .foot-txt {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+
+            /* .foot.first {
+                display: none;
+            } */
+
+            .foot {
+                width: 100%;
+                /* text-align: center; */
+            }
+
+            .foot-name, .foot.first p {
+                /* font-size: 1.2rem; */
+                text-align: center;
+            }
+
+            .foot.first {
+                border: none;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+            }
+
+            .bottom-pic {
+                margin-top: 4rem;
+                background-size: cover;
+
+                /* height: calc(47.06rem /2); */
+                /* min-height: 100%; */
+                /* height: 50vw;
+                width: 100%; */
+            }
+
+
+            .navbar-link:hover {
+                border-bottom: solid 3px #FFFFFF;
+            }
+
+        }
+
+ /* @ MEDIA 490 ALL */
+
+        @media all and (max-width: 490px) {
+
+        .workdays {
+                display: inline-block;
+                text-align: center;
+                margin-bottom: 14px;
+            }
+        }
+
+
+    </style>
+</head>
+
+
+<body onload='navHighFunc()'>
+    
+    <div class= 'container-grey'>
+        <div class='container-top'>
+            <div class='navbar'>
+                <div class='navbar-area'>
+                    <div class='navbar-links-box'>
+                        <a href='#' class='navbar-link'>SERVICES</a>
+                        <a href='#' class='navbar-link'>ABOUT US</a>
+                        <a href='#' class='navbar-link'>OUR TEAM</a>
+                        <a href='#' class='navbar-link'>TESTIMONIALS</a>
+                        <a href='#' class='navbar-link'>NEWS</a>
+                        <a href='#' class='navbar-link'>CONTACTS</a>
+                    </div>
+
+                    <div class= 'languages'>
+                        <span class='ru'>RU</span>
+                        <span class='en'>EN</span>
+                    </div>
+
+                    <div class='icon-find'>
+                        <i class='fa fa-search'></i>
+                    </div>
+
+                </div>
+
+                <button class='toglas'>
+                    <span class='rod'></span>
+                </button>
+
+            </div>
+
+            <!-- <div class='main-info-box'> -->
+            <p class= 'presentation-big'>Let us brighten your smile!</p>
+            <p class= 'presentation-small'>
+                We are dental care clinic that helps people to take care of their health and we have best dental doctors in here.
+            </p>
+            <a href='#'><button class='btn'>Learn More</button></a>
+                
+            <!-- </div> -->
+
+            <!-- HTML HANGING -->
+
+            <div class='container-hanging'>
+                <div class= 'phone-box'>
+                    <div class='phone-pic'></div>
+                    <hr style='color: rgb(71,103,183);'>
+                    <p class='hang-box-name'>Emergency Call</p>
+                    <p class='hang-box-txt'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                    <a href='#' class='hang-box-link'>CALL US NOW</a>
+                </div>
+        
+                <div class= 'map-box'>
+                    <div class='map-pic'></div>
+                    <hr style='color: rgb(82,119,208);'>
+                    <p class='hang-box-name'>Where Are We?</p>
+                    <p class='hang-box-txt'>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+                    <a href='#' class='hang-box-link'>SEE ON MAP</a>
+                </div>
+        
+                <div class= 'calendar-box'>
+                    <div class='calendar-pic'></div>
+                    <hr style='color: rgb(212,212,212);'>
+                    <p class='hang-box-name'>Opening Hours</p>
+        
+                    <div class='working-time-box'>
+                        <div class='workdays'>
+                            <p class='day'>Mon - Fri:</p>
+                            <p class='hours'>8:00am - 7:00pm</p>
+                        </div>
+        
+                        <div class='workdays'>
+                            <p class='day'>Saturday:</p>
+                            <p class='hours'>9:00am - 6:00pm</p>
+                        </div>
+        
+                        <div class='workdays'>
+                            <p class='day'>Sunday:</p>
+                            <p class='hours'>Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class='container-white'>
+        <div class= 'container-bottom'>
+            <div class='container-bottom-upper-box'>
+                <div class= 'white-container-bottom-left-col'>
+                    <div class= 'offer-box'>
+                        <p>
+                            Choose Our Clinic, Choose The Best Care For Yourself and Your Family
+                        </p>
+                    </div>
+
+                    <div class='signature-box'>
+                        <div class='signature'></div>
+                        <div class='signarer'>
+                            <p class='signature-owner'>Tom Henders</p>
+                            <br>
+                            <p class='sign-owner-duty'>Head Dentist</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class='white-container-bottom-right-col'>
+
+                    <div class='offer-right-top-box'>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+
+                    <div class='offer-right-bottom-box'>
+                        <p>
+                            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+
+                    <button class='btn btn-second'>See Our Services</button>
+
+                </div>
+            </div>
+
+            <div class='container-bottom-lower-box'>
+                    <div class='foot first'>
+                        <p>Our Values</p>
+                    </div>
+                    <div class='foot second'>
+                        <p class='foot-name'>Quality</p>
+                        <p class='foot-txt'>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                    <div class='foot third'>
+                        <p class='foot-name'>Health</p>
+                        <p class='foot-txt'>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+            </div>
+
+        </div>
+
+        <div class='bottom-pic'><img></div>
+    </div>
+
+
+
+
+
+    <script>
+
+    // EKRANO PLOTIS
+    window.addEventListener('resize', function() {
+        // let w=Math.max(document.documentElement.clientWidth);
+        let wEkr= document.documentElement.clientWidth;
+        console.clear();
+        console.log('Ekrano plotis: ' + wEkr);
+
+        // NAVBARO AUKSTIS
+        let navbarHigh = document.querySelector('.navbar').offsetHeight;
+            console.log('Navbaro aukstis: ' + navbarHigh + 'px');
+
+        
+        // let findTop;
+        if(wEkr <= 791) {
+            if(navbarHigh <=10) {
+                document.querySelector('.navbar').style.height = 94.7667 + 'px';
+                let findStyle = getComputedStyle(document.querySelector('.icon-find'));
+                let findTop = parseInt(findStyle.marginTop);
+                console.log('icon-find top: ' + findTop);
+            } else {
+                document.querySelector('.navbar').style.height = navbarHigh + 'px';
+            }
+
+        } else {
+            document.querySelector('.navbar').style.height = 'auto';
+        }
+    })
+
+    document.querySelector('.toglas').onclick = function () {
+        let togbtn = document.querySelector('.toglas');
+        // this.classList.toggle('active');
+        document.querySelector('.navbar-area').classList.toggle('active');
+        // togbtn.style.position = 'absolute';
+        // alert('paspaudei');
+    };
+
+    // .navbar-link'U SKAICIUS
+
+    let myg = document.querySelectorAll('.navbar-link');
+    console.log('Classiu yra: ' + myg.length);
+
+    for(let i=0; i < myg.length; i++) {
+        document.querySelectorAll('.navbar-link')[i].addEventListener('click', () => {
+        alert('Paspaudete virsutini linka.');
+    });
+    }
+    
+    //PAPRASCIAU BUTU RANKA NUSTATYTI NAVBARO AUKSTI, BET MOKYMOSI TIKSLAIS PANAUDOJAU JAVA
+    function navHighFunc() {
+        let wEkr= document.documentElement.clientWidth;
+        if(wEkr <= 790) {
+            document.querySelector('.navbar').style.height = 94.7667 + 'px';
+            // alert('Ekr. plotis maziau 790px todel navbar-as nustatytas per Javascript');
+        }
+    }
+
+
+
+    </script>
+
+</body>
+</html>
