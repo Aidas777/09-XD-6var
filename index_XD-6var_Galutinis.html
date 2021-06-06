@@ -235,8 +235,8 @@
             z-index: 99999;
             /* position: relative; */
             border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto;
+            /* margin-left: auto;
+            margin-right: 3px; */
             content: "";
 
         }
@@ -253,6 +253,10 @@
         .rod:after {
             top: 7px;
             position: absolute;
+        }
+
+        .rod, .rod:before, .rod:after {
+            transition: 0.4s linear;
         }
 
 
@@ -995,15 +999,15 @@
                 width: 90%;
                 z-index: 2;
 
-                animation-name: menu-showB;
-                animation-duration: 0.6s;
+                animation-name: menu-show-Act-B;
+                animation-duration: 1s;
                 /* border: solid 1px white; */
                 /* transition-duration: 3s; */
                 /* transition: max-height ease 0.9s; */
 
             }
 
-            @keyframes menu-showB {
+            @keyframes menu-show-Act-B {
                 from {
                     background-color: transparent;
                 }
@@ -1015,11 +1019,13 @@
             @keyframes menu-showF {
                 from {
                     color: transparent;
-                    font-size: 0;
+                    font-size: 0px;
+                    /* letter-spacing: 20px; */
                 }
                 to {
                     color: rgb(255, 255, 255);
                     font-size: auto;
+                    /* letter-spacing: normal; */
                 }
             }
 
@@ -1060,7 +1066,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 10px;
-                margin-bottom: 10px;
+                margin-bottom: 30px;
                 text-align: center;
                 
             }
@@ -1079,13 +1085,30 @@
             .toglas {
                 display: block;
                 /* right: 15px; */
-                margin-right: 4.5rem;
+                /* margin-right: 4.5rem; */
+                margin-right: 8.33%;
                 margin-top: 24px;
                 /* margin-top: 1.75rem; */
                 margin-bottom: 1.75rem;
                 z-index: 3;
                 position: fixed;
                 /* position: relative; */
+            }
+
+            /* .toglas.active {
+                background-color: rgba(0, 0, 0, 0.31);
+            } */
+
+            .toglas.active .rod {
+                background-color: transparent;
+            }
+
+            .toglas.active .rod:after {
+                transform:  translateY(-7px) rotate(-45deg);
+            }
+
+            .toglas.active .rod:before {
+                transform:  translateY(7px) rotate(45deg);
             }
 
 
@@ -1175,6 +1198,10 @@
                 text-align: center;
                 margin-bottom: 14px;
             }
+
+            /* .toglas {
+                margin-right: 8.33%;
+            } */
         }
 
 
@@ -1364,9 +1391,10 @@
     })
 
     document.querySelector('.toglas').onclick = function () {
-        let togbtn = document.querySelector('.toglas');
+        // let togbtn = document.querySelector('.toglas');
         // this.classList.toggle('active');
         document.querySelector('.navbar-area').classList.toggle('active');
+        document.querySelector('.toglas').classList.toggle('active');
         // togbtn.style.position = 'absolute';
         // alert('paspaudei');
     };
