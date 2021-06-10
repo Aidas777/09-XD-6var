@@ -300,7 +300,6 @@
         .calendar-box {
             background-color: rgb(248, 248, 248);
             color: rgb(6, 6, 6);
-            height: inherit;
         }
 
         .calendar-pic {
@@ -1006,7 +1005,7 @@
 </head>
 
 
-<body>
+<body onload='navHighFunc()'>
     
     <div class= 'container-grey'>
         <div class='container-top'>
@@ -1156,16 +1155,6 @@
 
     <script>
 
-    //NAVBAR AUKSTIS ON LOAD (PAPRASCIAU BUTU RANKA NUSTATYTI NAVBARO AUKSTI, BET MOKYMOSI TIKSLAIS PANAUDOJAU JAVA)
-    window.addEventListener('load', function() {
-    // function navHighFunc() {
-        let wEkr= document.documentElement.clientWidth;
-        if(wEkr <= 790) {
-            document.querySelector('.navbar').style.height = 94.7667 + 'px';
-            // alert('Ekr. plotis maziau 790px todel navbar-as nustatytas per Javascript');
-        }
-    });
-
     // EKRANO PLOTIS
     window.addEventListener('resize', function() {
         // let w=Math.max(document.documentElement.clientWidth);
@@ -1173,7 +1162,7 @@
         console.clear();
         console.log('Ekrano plotis: ' + wEkr);
 
-    // NAVBARO AUKSTIS SU IF
+        // NAVBARO AUKSTIS
         let navbarHigh = document.querySelector('.navbar').offsetHeight;
             console.log('Navbaro aukstis: ' + navbarHigh + 'px');
 
@@ -1194,8 +1183,6 @@
         }
     })
 
-    //TOGLAS ON CLICK
-
     document.querySelector('.toglas').onclick = function () {
         document.querySelector('.navbar-area').classList.toggle('active');
         document.querySelector('.toglas').classList.toggle('active');
@@ -1213,6 +1200,17 @@
         alert('Paspaudete virsutini linka.');
     });
     }
+    
+    //PAPRASCIAU BUTU RANKA NUSTATYTI NAVBARO AUKSTI, BET MOKYMOSI TIKSLAIS PANAUDOJAU JAVA
+    function navHighFunc() {
+        let wEkr= document.documentElement.clientWidth;
+        if(wEkr <= 790) {
+            document.querySelector('.navbar').style.height = 94.7667 + 'px';
+            // alert('Ekr. plotis maziau 790px todel navbar-as nustatytas per Javascript');
+        }
+    }
+
+
 
     </script>
 

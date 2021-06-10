@@ -300,7 +300,6 @@
         .calendar-box {
             background-color: rgb(248, 248, 248);
             color: rgb(6, 6, 6);
-            height: inherit;
         }
 
         .calendar-pic {
@@ -810,8 +809,8 @@
             .navbar-area {
                 background-color: rgba(76, 130, 201, 0.8);
                 display: none;
-                /* animation-name: menu-show-Nact-B;
-                animation-duration: 1s; */
+                animation-name: menu-show-Nact-B;
+                animation-duration: 1s;
             }
 
             .navbar-area.active {
@@ -849,7 +848,7 @@
                 }
             }
 
-            /* @keyframes menu-show-Nact-B {
+            @keyframes menu-show-Nact-B {
                 from {
                     background-color: rgba(76, 130, 201, 0.8);
                     display: flex;
@@ -858,7 +857,7 @@
                     background-color: transparent;
                     display: none;
                 }
-            } */
+            }
 
             .languages, .ru, .en {
                 position: relative;
@@ -1006,7 +1005,7 @@
 </head>
 
 
-<body>
+<body onload='navHighFunc()'>
     
     <div class= 'container-grey'>
         <div class='container-top'>
@@ -1156,16 +1155,6 @@
 
     <script>
 
-    //NAVBAR AUKSTIS ON LOAD (PAPRASCIAU BUTU RANKA NUSTATYTI NAVBARO AUKSTI, BET MOKYMOSI TIKSLAIS PANAUDOJAU JAVA)
-    window.addEventListener('load', function() {
-    // function navHighFunc() {
-        let wEkr= document.documentElement.clientWidth;
-        if(wEkr <= 790) {
-            document.querySelector('.navbar').style.height = 94.7667 + 'px';
-            // alert('Ekr. plotis maziau 790px todel navbar-as nustatytas per Javascript');
-        }
-    });
-
     // EKRANO PLOTIS
     window.addEventListener('resize', function() {
         // let w=Math.max(document.documentElement.clientWidth);
@@ -1173,7 +1162,7 @@
         console.clear();
         console.log('Ekrano plotis: ' + wEkr);
 
-    // NAVBARO AUKSTIS SU IF
+        // NAVBARO AUKSTIS
         let navbarHigh = document.querySelector('.navbar').offsetHeight;
             console.log('Navbaro aukstis: ' + navbarHigh + 'px');
 
@@ -1194,8 +1183,6 @@
         }
     })
 
-    //TOGLAS ON CLICK
-
     document.querySelector('.toglas').onclick = function () {
         document.querySelector('.navbar-area').classList.toggle('active');
         document.querySelector('.toglas').classList.toggle('active');
@@ -1206,13 +1193,24 @@
     // .navbar-link'U SKAICIUS
 
     let myg = document.querySelectorAll('.navbar-link');
-    console.log('Classiu yra: ' + myg.length);
+    console.log('.navbar-link classiu yra: ' + myg.length);
 
     for(let i=0; i < myg.length; i++) {
         document.querySelectorAll('.navbar-link')[i].addEventListener('click', () => {
         alert('Paspaudete virsutini linka.');
     });
     }
+    
+    //PAPRASCIAU BUTU RANKA NUSTATYTI NAVBARO AUKSTI, BET MOKYMOSI TIKSLAIS PANAUDOJAU JAVA
+    function navHighFunc() {
+        let wEkr= document.documentElement.clientWidth;
+        if(wEkr <= 790) {
+            document.querySelector('.navbar').style.height = 94.7667 + 'px';
+            // alert('Ekr. plotis maziau 790px todel navbar-as nustatytas per Javascript');
+        }
+    }
+
+
 
     </script>
 
